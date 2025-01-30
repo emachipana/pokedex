@@ -9,6 +9,8 @@ class AppColors {
 
   static Color black = const Color(0XFF292929);
 
+  static Color blue = const Color(0XFF3761A8);
+
   static Map<String, Color> pokemonColors = {
     "normal": Color(0xFFA8A878),
     "fire": Color(0xFFF08030),
