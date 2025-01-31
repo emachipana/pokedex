@@ -12,11 +12,11 @@ class AppColors {
   static Color blue = const Color(0XFF3761A8);
 
   static Map<String, Color> pokemonColors = {
-    "normal": Color(0xFFA8A878),
-    "fire": Color(0xFFF08030),
+    "normal": Color(0xDEA8A878),
+    "fire": Color(0xDEF95E5E),
     "water": Color(0xFF6890F0),
-    "electric": Color(0xFFF8D030),
-    "grass": Color(0xFF78C850),
+    "electric": Color(0xFFECC423),
+    "grass": Color(0xDE3EC6A8),
     "ice": Color(0xFF98D8D8),
     "fighting": Color(0xFFC03028),
     "poison": Color(0xFFA040A0),
