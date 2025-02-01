@@ -9,6 +9,7 @@ class PokedexApp extends StatelessWidget {
     return MaterialApp(
       title: "Pokedex",
       routes: appRoutes,
+      onGenerateRoute: onGenerateRoute,
       initialRoute: "loading",
     );
   }
