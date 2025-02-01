@@ -1,8 +1,9 @@
 class Pokemon {
+  int id;
   String name;
   String mainImg;
   String secondaryImg;
-  int? order;
+  int order;
   List<dynamic> types;
 
   Pokemon({
@@ -11,6 +12,7 @@ class Pokemon {
     required this.secondaryImg,
     required this.types,
     required this.order,
+    required this.id,
   });
 
   factory Pokemon.fromJson(Map<String, dynamic> json) {
@@ -19,7 +21,8 @@ class Pokemon {
       mainImg: json["sprites"]["other"]["official-artwork"]["front_default"],
       secondaryImg: json["sprites"]["other"]["official-artwork"]["front_shiny"],
       types: json["types"],
-      order: json["order"]
+      order: json["order"],
+      id: json["id"]
     );
   }
 }

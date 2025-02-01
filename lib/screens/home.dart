@@ -93,6 +93,7 @@ class HomeState extends State<HomeScreen> {
                 children: pokemons.map((pokemon) {
                   return PokemonCard(
                     pokemon: Pokemon(
+                      id: pokemon.id,
                       name: pokemon.name,
                       mainImg: pokemon.mainImg,
                       types: pokemon.types,
