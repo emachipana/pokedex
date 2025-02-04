@@ -29,7 +29,7 @@ class HomeState extends State<HomeScreen> {
     try {
       final dio = Dio();
       final response =
-          await dio.get("https://pokeapi.co/api/v2/pokemon?limit=100");
+          await dio.get("https://pokeapi.co/api/v2/pokemon?limit=60");
 
       List<Future<Pokemon>> requests =
           response.data["results"].map<Future<Pokemon>>((el) async {
@@ -91,15 +91,7 @@ class HomeState extends State<HomeScreen> {
                 runSpacing: 10,
                 alignment: WrapAlignment.center,
                 children: pokemons.map((pokemon) {
-                  return PokemonCard(
-                    pokemon: Pokemon(
-                      name: pokemon.name,
-                      mainImg: pokemon.mainImg,
-                      types: pokemon.types,
-                      order: pokemon.order,
-                      secondaryImg: pokemon.secondaryImg
-                    ),
-                  );
+                  return PokemonCard(pokemon: pokemon);
                 }).toList(),
               ),
             ),

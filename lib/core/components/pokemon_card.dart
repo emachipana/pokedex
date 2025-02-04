@@ -13,7 +13,7 @@ class PokemonCard extends StatelessWidget {
     String mainPokemonType = pokemon.types[0]["type"]["name"];
 
     return InkWell(
-      onTap: () => {},
+      onTap: () => redirectToDetail(context),
       child: Container(
         width: 200,
         height: 160,
@@ -67,6 +67,14 @@ class PokemonCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  void redirectToDetail(BuildContext context) {
+    Navigator.pushNamed(
+      context,
+      "detail",
+      arguments: pokemon
     );
   }
 }

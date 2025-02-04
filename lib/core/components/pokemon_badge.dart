@@ -12,7 +12,7 @@ class PokemonBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 5),
+      margin: EdgeInsets.only(top: 5, right: 5),
       padding: EdgeInsets.symmetric(vertical: 3, horizontal: 6),
       decoration: BoxDecoration(
           color: AppColors.white.withAlpha(80),
